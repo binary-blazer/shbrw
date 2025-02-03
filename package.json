@@ -30,6 +30,14 @@
   "engines": {
     "node": ">=16.13.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binary-blazer/shbrw.git"
+  },
+  "homepage": "https://github.com/binary-blazer/shbrw#readme",
+  "bugs": {
+    "url": "https://github.com/binary-blazer/shbrw/issues"
+  },
   "scripts": {
     "build": "tsc",
     "start": "electron .",
