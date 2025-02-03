@@ -1,6 +1,6 @@
-# Contributing to SHB
+# Contributing to SHBRW
 
-Thank you for considering contributing to SHB! We welcome contributions from the community and are excited to work with you.
+Thank you for considering contributing to SHBRW! We welcome contributions from the community and are excited to work with you.
 
 ## How to Contribute
 
@@ -10,13 +10,13 @@ If you find a bug or have a feature request, please create an issue on our GitHu
 
 ### Submitting Pull Requests
 
-1. **Fork the Repository**: Start by forking the SHB repository to your GitHub account.
+1. **Fork the Repository**: Start by forking the SHBRW repository to your GitHub account.
 
 2. **Clone the Repository**: Clone the forked repository to your local machine.
 
    ```bash
-   git clone https://github.com/binary-blazer/shb.git
-   cd shb
+   git clone https://github.com/binary-blazer/shbrw.git
+   cd shbrw
    ```
 
 3. **Create a Branch**: Create a new branch for your changes. Use a descriptive name for your branch.
@@ -40,7 +40,7 @@ If you find a bug or have a feature request, please create an issue on our GitHu
    git push origin feature/your-feature-name
    ```
 
-7. **Create a Pull Request**: Go to the original SHB repository on GitHub and create a pull request. Provide a detailed description of your changes and any relevant information.
+7. **Create a Pull Request**: Go to the original SHBRW repository on GitHub and create a pull request. Provide a detailed description of your changes and any relevant information.
 
 ### Code Style
 
@@ -68,6 +68,6 @@ Please note that this project is released with a [Contributor Code of Conduct](.
 
 ## License
 
-By contributing to SHB, you agree that your contributions will be licensed under the [Apache License 2.0](./LICENSE).
+By contributing to SHBRW, you agree that your contributions will be licensed under the [Apache License 2.0](./LICENSE).
 
 Thank you for your contributions!
