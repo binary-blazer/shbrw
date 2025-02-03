@@ -1,4 +1,4 @@
-import { takeScreenshot } from 'shb';
+import { takeScreenshot } from 'shbrw';
 
 const url = 'https://example.com';
 const options = {

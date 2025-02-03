@@ -1,10 +1,10 @@
 {
-  "name": "sh-browser",
+  "name": "shbrw",
   "description": "A frameless CLI browser made for screenshots",
   "version": "1.0.0-a.1",
   "main": "dist/api.js",
   "bin": {
-    "shb": "./dist/main.js"
+    "shbrw": "./dist/main.js"
   },
   "author": {
     "name": "Jonas F. Franke <@binary-blazer>",
@@ -14,7 +14,7 @@
   "keywords": [
     "cli",
     "screenshot",
-    "shb",
+    "shbrw",
     "screencapture",
     "browser",
     "frameless",

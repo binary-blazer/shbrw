@@ -1,13 +1,13 @@
 {
-  "name": "shb-example",
+  "name": "shbrw-example",
   "version": "1.0.0",
-  "description": "Example project demonstrating the usage of the shb package",
+  "description": "Example project demonstrating the usage of the shbrw package",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "shb": "file:.."
+    "shbrw": "file:.."
   }
 }

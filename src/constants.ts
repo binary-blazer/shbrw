@@ -1,7 +1,7 @@
 import path from 'node:path';
 import formatImagePath from './formatImagePath.js';
 
-export const APP_NAME = 'shb';
+export const APP_NAME = 'shbrw';
 export const FULL_APP_NAME = 'Screenshot Browser';
 export const WINDOW_TITLE = 'Screenshot Browser';
 export const WINDOW_ICON = formatImagePath(path.join(__dirname, '../assets/logo_rounded.png'));
