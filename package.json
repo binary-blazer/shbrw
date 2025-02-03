@@ -1,5 +1,5 @@
 {
-  "name": "shb",
+  "name": "sh-browser",
   "description": "A frameless CLI browser made for screenshots",
   "version": "1.0.0-a.1",
   "main": "dist/api.js",
