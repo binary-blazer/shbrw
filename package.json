@@ -41,7 +41,6 @@
   "scripts": {
     "build": "tsc",
     "start": "electron .",
-    "postinstall": "bun run build",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "scripts:update-version": "bun scripts/updateVersion.js",
