@@ -1,0 +1,41 @@
+{
+  "name": "browser-test",
+  "description": "A frameless CLI browser made for screenshots",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "type": "module",
+  "bin": {
+    "scb": "./dist/main.js"
+  },
+  "author": {
+    "name": "Jonas F. Franke <@binary-blazer>",
+    "email": "me@binaryblazer.me",
+    "url": "https://binaryblazer.me"
+  },
+  "keywords": [
+    "browser",
+    "cli",
+    "screenshot"
+  ],
+  "files": [
+    "dist",
+    "assets",
+    "README.md"
+  ],
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "electron .",
+    "postinstall": "bun run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "electron": "^34.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
