@@ -1,6 +1,6 @@
 <div align="center">
   <picture>
-      <img src="./assets/logo_rounded.png" width="15%">
+      <img src="https://github.com/binary-blazer/shb/blob/master/assets/logo_rounded.png" width="15%">
   </picture>
   <h1>Screencapture Browser (shbrw)</h1>
   <p>Screencapture Browser (shbrw) is a frameless CLI browser designed for taking screenshots of websites. It provides both a CLI and an API for capturing screenshots.</p>
@@ -45,7 +45,7 @@ shbrw --url=<websiteUrl> [--size=WxH] [--optimized] [--noJS]
 
 Then, right-click on the page and select "Take Screenshot" from the context menu.
 
-<img src="./images/contextmenu.png" alt="Context menu" width="300">
+<img src="https://github.com/binary-blazer/shb/blob/master/images/contextmenu.png" alt="Context menu" width="300">
 
 ### CLI Options
 
