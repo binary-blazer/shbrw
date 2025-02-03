@@ -2,6 +2,8 @@ export interface WindowOptions {
     width?: number;
     height?: number;
     noJS?: boolean;
+    x?: number;
+    y?: number;
 }
 
 export interface CLIArgs {
