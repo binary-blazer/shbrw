@@ -1,9 +1,9 @@
 import path from 'node:path';
 import formatImagePath from './formatImagePath.js';
 
-export const APP_NAME = 'scb';
-export const FULL_APP_NAME = 'Screencapture Browser';
-export const WINDOW_TITLE = 'Screencapture Browser';
+export const APP_NAME = 'shb';
+export const FULL_APP_NAME = 'Screenshot Browser';
+export const WINDOW_TITLE = 'Screenshot Browser';
 export const WINDOW_ICON = formatImagePath(path.join(__dirname, '../assets/logo_rounded.png'));
 
 export const WINDOW_SIZES = [

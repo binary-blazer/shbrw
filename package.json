@@ -1,10 +1,10 @@
 {
-  "name": "scb",
+  "name": "shb",
   "description": "A frameless CLI browser made for screenshots",
   "version": "1.0.0",
   "main": "dist/api.js",
   "bin": {
-    "scb": "./dist/main.js"
+    "shb": "./dist/main.js"
   },
   "author": {
     "name": "Jonas F. Franke <@binary-blazer>",
@@ -14,7 +14,7 @@
   "keywords": [
     "cli",
     "screenshot",
-    "scb",
+    "shb",
     "screencapture",
     "browser",
     "frameless",
