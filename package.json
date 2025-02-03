@@ -1,7 +1,7 @@
 {
   "name": "shb",
   "description": "A frameless CLI browser made for screenshots",
-  "version": "1.0.0",
+  "version": "1.0.0-a.1",
   "main": "dist/api.js",
   "bin": {
     "shb": "./dist/main.js"
