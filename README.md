@@ -1,6 +1,6 @@
 <div align="center">
   <picture>
-      <img src="./assets/logo_rounded.png" width="15%" style="max-width: 75%;">
+      <img src="./assets/logo_rounded.png" width="15%">
   </picture>
   <h1>Screencapture Browser (scb)</h1>
   <p>Screencapture Browser (scb) is a frameless CLI browser designed for taking screenshots of websites. It provides both a CLI and an API for capturing screenshots.</p>
@@ -67,6 +67,8 @@ const url = 'https://example.com';
 const options = {
     width: 1920,
     height: 1080,
+    x: 0,
+    y: 0,
     noJS: false
 };
 
@@ -85,4 +87,6 @@ takeScreenshot(url, options)
 - `options`: An object containing the following properties:
   - `width`: The width of the screenshot (default: `1280`).
   - `height`: The height of the screenshot (default: `720`).
+  - `x`: The x-coordinate of the screenshot (default: `0`).
+  - `y`: The y-coordinate of the screenshot (default: `0`).
   - `noJS`: Disable JavaScript on the website (default: `false`).
