@@ -2,8 +2,8 @@
   <picture>
       <img src="https://github.com/binary-blazer/shb/blob/master/assets/logo_rounded.png" width="15%">
   </picture>
-  <h1>Screencapture Browser (shbrw)</h1>
-  <p>Screencapture Browser (shbrw) is a frameless CLI browser designed for taking screenshots of websites. It provides both a CLI and an API for capturing screenshots.</p>
+  <h1>Screenshot Browser (shbrw)</h1>
+  <p>Screenshot Browser (shbrw) is a frameless CLI browser designed for taking screenshots of websites. It provides both a CLI and an API for capturing screenshots.</p>
 
   <p align="center">
   <a aria-label="NPM version" href="https://www.npmjs.com/package/shbrw">
