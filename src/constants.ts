@@ -1,8 +1,6 @@
 import path from 'node:path';
 import formatImagePath from './formatImagePath.js';
 
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
-
 export const APP_NAME = 'scb';
 export const FULL_APP_NAME = 'Screencapture Browser';
 export const WINDOW_TITLE = 'Screencapture Browser';

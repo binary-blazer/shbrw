@@ -3,7 +3,6 @@
   "description": "A frameless CLI browser made for screenshots",
   "version": "1.0.0-a.1",
   "main": "dist/api.js",
-  "type": "module",
   "bin": {
     "scb": "./dist/main.js"
   },

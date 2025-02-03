@@ -1,4 +1,4 @@
-const { takeScreenshot } = require('scb');
+import { takeScreenshot } from 'scb';
 
 const url = 'https://example.com';
 const options = {

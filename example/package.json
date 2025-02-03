@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Example project demonstrating the usage of the scb package",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
