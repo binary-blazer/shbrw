@@ -1,56 +1,38 @@
-import { parseArgs } from "node:util";
-import { app } from "electron";
-import { APP_NAME } from "./constants.js";
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
 
 export function parseCLIArgs(): { url: string; width: number; height: number; optimized: boolean; noJS: boolean } {
-    const knownArgs: string[] = [];
-    const electronArgs: string[] = [];
-    
-    process.argv.slice(2).forEach(arg => {
-        if (arg.startsWith('--url=') || 
-            arg.startsWith('--size=') ||
-            arg === '--optimized' ||
-            arg === '--noJS') {
-            knownArgs.push(arg);
-        } else {
-            electronArgs.push(arg);
-        }
-    });
+    const argv = yargs(hideBin(process.argv))
+        .option('url', {
+            describe: 'The URL to open',
+            type: 'string',
+            demandOption: true
+        })
+        .option('size', {
+            describe: 'The window size in format WIDTHxHEIGHT',
+            type: 'string',
+            default: '1280x720'
+        })
+        .option('optimized', {
+            describe: 'Enable optimized mode',
+            type: 'boolean',
+            default: false
+        })
+        .option('noJS', {
+            describe: 'Disable JavaScript',
+            type: 'boolean',
+            default: false
+        })
+        .strict(false)
+        .parseSync();
 
-    const { values } = parseArgs({
-        args: knownArgs,
-        options: {
-            size: { type: 'string' },
-            optimized: { type: 'boolean' },
-            noJS: { type: 'boolean' },
-            url: { type: 'string' }
-        },
-        strict: false
-    });
-    
-    if (!values.url) {
-        console.error(`(${APP_NAME}) Usage: ${APP_NAME} --url=<websiteUrl> [--size=WxH] [--optimized] [--noJS]`);
-        app.exit(1);
-    }
-    
-    const [width, height] = (typeof values.size === 'string' ? values.size : '1280x720').split('x').map(Number);
+    const [width, height] = argv.size.split('x').map(Number);
 
-    electronArgs.forEach(arg => {
-        if (arg.startsWith('--')) {
-            const [flag, value] = arg.slice(2).split('=');
-            if (value) {
-                app.commandLine.appendSwitch(flag, value);
-            } else {
-                app.commandLine.appendSwitch(flag);
-            }
-        }
-    });
-    
     return {
-        url: typeof values.url === 'string' ? values.url : '',
+        url: argv.url,
         width,
         height,
-        optimized: typeof values.optimized === 'boolean' ? values.optimized : false,
-        noJS: typeof values.noJS === 'boolean' ? values.noJS : false
+        optimized: argv.optimized,
+        noJS: argv.noJS
     };
 }

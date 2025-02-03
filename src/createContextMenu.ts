@@ -1,4 +1,4 @@
-import { BrowserWindow, Menu, MenuItem, app, dialog, screen } from "electron";
+import { BrowserWindow, Menu, MenuItem, app, dialog, screen } from 'electron';
 import { WINDOW_SIZES, APP_NAME, FULL_APP_NAME } from "./constants.js";
 import path from "node:path";
 import fs from "node:fs";
@@ -11,13 +11,13 @@ export async function createContextMenu(win: BrowserWindow): Promise<Menu> {
         submenu: [
             { 
                 label: 'Back', 
-                click: () => win.webContents.navigationHistory.goBack(),
-                enabled: win.webContents.navigationHistory?.canGoBack() || false
+                click: () => win.webContents.goBack(),
+                enabled: win.webContents.canGoBack()
             },
             { 
                 label: 'Forward', 
-                click: () => win.webContents.navigationHistory.goForward(),
-                enabled: win.webContents.navigationHistory?.canGoForward() || false
+                click: () => win.webContents.goForward(),
+                enabled: win.webContents.canGoForward()
             },
             { 
                 label: 'Reload', 

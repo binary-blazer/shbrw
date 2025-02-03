@@ -1,4 +1,4 @@
-import { BrowserWindow, app, nativeImage } from "electron";
+import { BrowserWindow, nativeImage, app } from 'electron';
 import { createContextMenu } from "./createContextMenu.js";
 import { APP_NAME, WINDOW_ICON, WINDOW_TITLE } from "./constants.js";
 
