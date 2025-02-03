@@ -1,7 +1,7 @@
 {
   "name": "browser-test",
   "description": "A frameless CLI browser made for screenshots",
-  "version": "1.0.0",
+  "version": "1.0.0-a.1",
   "main": "dist/main.js",
   "type": "module",
   "bin": {
@@ -32,6 +32,9 @@
     "postinstall": "bun run build",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "scripts:update-version": "bun scripts/updateVersion.js",
+    "scripts:upv": "bun scripts/updateVersion.js",
+    "upv": "bun scripts/updateVersion.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "prettier": "^3.4.2",
+    "prompt-sync": "^4.2.0",
     "typescript": "^5.7.3"
   }
 }
