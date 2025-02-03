@@ -1,0 +1,12 @@
+{
+  "name": "scb-example",
+  "version": "1.0.0",
+  "description": "Example project demonstrating the usage of the scb package",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "scb": "file:.."
+  }
+}
