@@ -8,7 +8,7 @@ export function parseCLIArgs(): { url: string; width: number; height: number; op
     
     process.argv.slice(2).forEach(arg => {
         if (arg.startsWith('--url=') || 
-            arg.startsWith('--resolution=') ||
+            arg.startsWith('--size=') ||
             arg === '--optimized' ||
             arg === '--noJS') {
             knownArgs.push(arg);
@@ -20,7 +20,7 @@ export function parseCLIArgs(): { url: string; width: number; height: number; op
     const { values } = parseArgs({
         args: knownArgs,
         options: {
-            resolution: { type: 'string' },
+            size: { type: 'string' },
             optimized: { type: 'boolean' },
             noJS: { type: 'boolean' },
             url: { type: 'string' }
@@ -29,11 +29,11 @@ export function parseCLIArgs(): { url: string; width: number; height: number; op
     });
     
     if (!values.url) {
-        console.error(`(${APP_NAME}) Usage: ${APP_NAME} --url=<websiteUrl> [--resolution=WxH] [--optimized] [--noJS]`);
+        console.error(`(${APP_NAME}) Usage: ${APP_NAME} --url=<websiteUrl> [--size=WxH] [--optimized] [--noJS]`);
         app.exit(1);
     }
     
-    const [width, height] = (typeof values.resolution === 'string' ? values.resolution : '1280x720').split('x').map(Number);
+    const [width, height] = (typeof values.size === 'string' ? values.size : '1280x720').split('x').map(Number);
 
     electronArgs.forEach(arg => {
         if (arg.startsWith('--')) {

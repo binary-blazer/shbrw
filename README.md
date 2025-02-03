@@ -1,28 +1,38 @@
-# Screenshot Browser (scb)
+# Screencapture Browser (scb)
 
-Screenshot Browser (scb) is a frameless CLI browser made for taking screenshots of websites. It provides both a CLI and an API for taking screenshots.
+Screencapture Browser (scb) is a frameless CLI browser designed for taking screenshots of websites. It provides both a CLI and an API for capturing screenshots.
 
 ## Installation
 
 To install the package, use npm:
 
-```sh
+```bash
 npm install -g scb
+# or
+yarn global add scb
+# or
+pnpm add -g scb
+# or
+bun install -g scb
 ```
 
 ## CLI Usage
 
-To take a screenshot using the CLI, run the following command:
+To open a headless and frameless browser window, use the following command:
 
-```sh
-scb --url=<websiteUrl> [--resolution=WxH] [--optimized] [--noJS]
+```bash
+scb --url=<websiteUrl> [--size=WxH] [--optimized] [--noJS]
 ```
+
+Then, right-click on the page and select "Take Screenshot" from the context menu.
+
+<img src="./images/contextmenu.png" alt="Context menu" width="300">
 
 ### CLI Options
 
-- `--url`: The URL of the website to take a screenshot of.
-- `--resolution`: The resolution of the screenshot in the format `WxH` (default: `1280x720`).
-- `--optimized`: Optimize the screenshot for smaller file size.
+- `--url`: The URL of the website to open.
+- `--size`: The size of the window in the format `WxH` (default: `1280x720`).
+- `--optimized`: Run the website in optimized mode.
 - `--noJS`: Disable JavaScript on the website.
 
 ## API Usage

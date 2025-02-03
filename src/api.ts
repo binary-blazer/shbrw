@@ -1,4 +1,3 @@
-import { startWindow } from './startWindow.js';
 import { WindowOptions } from './types/index.js';
 import { BrowserWindow } from 'electron';
 

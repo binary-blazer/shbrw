@@ -1,5 +1,5 @@
 {
-  "name": "browser-test",
+  "name": "scb",
   "description": "A frameless CLI browser made for screenshots",
   "version": "1.0.0-a.1",
   "main": "dist/api.js",
@@ -15,7 +15,12 @@
   "keywords": [
     "browser",
     "cli",
-    "screenshot"
+    "screenshot",
+    "scb",
+    "screencapture",
+    "browser",
+    "frameless",
+    "headless"
   ],
   "files": [
     "dist",
