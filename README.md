@@ -2,21 +2,21 @@
   <picture>
       <img src="./assets/logo_rounded.png" width="15%">
   </picture>
-  <h1>Screencapture Browser (scb)</h1>
-  <p>Screencapture Browser (scb) is a frameless CLI browser designed for taking screenshots of websites. It provides both a CLI and an API for capturing screenshots.</p>
+  <h1>Screencapture Browser (shb)</h1>
+  <p>Screencapture Browser (shb) is a frameless CLI browser designed for taking screenshots of websites. It provides both a CLI and an API for capturing screenshots.</p>
 
   <p align="center">
-  <a aria-label="NPM version" href="https://www.npmjs.com/package/scb">
-    <img alt="" src="https://img.shields.io/npm/v/scb.svg?style=for-the-badge&labelColor=0e0a07">
+  <a aria-label="NPM version" href="https://www.npmjs.com/package/shb">
+    <img alt="" src="https://img.shields.io/npm/v/shb.svg?style=for-the-badge&labelColor=0e0a07">
   </a>
-  <a aria-label="Size" href="https://www.npmjs.com/package/scb">
-    <img alt="" src="https://img.shields.io/npm/unpacked-size/scb?style=for-the-badge&labelColor=0e0a07">
+  <a aria-label="Size" href="https://www.npmjs.com/package/shb">
+    <img alt="" src="https://img.shields.io/npm/unpacked-size/shb?style=for-the-badge&labelColor=0e0a07">
   </a>
-  <a aria-label="NPM Downloads" href="https://www.npmjs.com/package/scb">
-    <img alt="" src="https://img.shields.io/npm/dt/scb.svg?style=for-the-badge&labelColor=0e0a07">
+  <a aria-label="NPM Downloads" href="https://www.npmjs.com/package/shb">
+    <img alt="" src="https://img.shields.io/npm/dt/shb.svg?style=for-the-badge&labelColor=0e0a07">
   </a>
-    <a aria-label="License" href="https://www.npmjs.com/package/scb">
-    <img alt="" src="https://img.shields.io/npm/l/scb?style=for-the-badge&labelColor=0e0a07">
+    <a aria-label="License" href="https://www.npmjs.com/package/shb">
+    <img alt="" src="https://img.shields.io/npm/l/shb?style=for-the-badge&labelColor=0e0a07">
     </a>
 </p>
 </div>
@@ -26,13 +26,13 @@
 To install the package, use npm:
 
 ```bash
-npm install -g scb
+npm install -g shb
 # or
-yarn global add scb
+yarn global add shb
 # or
-pnpm add -g scb
+pnpm add -g shb
 # or
-bun install -g scb
+bun install -g shb
 ```
 
 ## CLI Usage
@@ -40,7 +40,7 @@ bun install -g scb
 To open a headless and frameless browser window, use the following command:
 
 ```bash
-scb --url=<websiteUrl> [--size=WxH] [--optimized] [--noJS]
+shb --url=<websiteUrl> [--size=WxH] [--optimized] [--noJS]
 ```
 
 Then, right-click on the page and select "Take Screenshot" from the context menu.
@@ -61,7 +61,7 @@ You can also use the API to take screenshots programmatically.
 ### Example
 
 ```js
-import { takeScreenshot } from 'scb';
+import { takeScreenshot } from 'shb';
 
 const url = 'https://example.com';
 const options = {

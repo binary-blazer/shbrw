@@ -1,13 +1,13 @@
 {
-  "name": "scb-example",
+  "name": "shb-example",
   "version": "1.0.0",
-  "description": "Example project demonstrating the usage of the scb package",
+  "description": "Example project demonstrating the usage of the shb package",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "scb": "file:.."
+    "shb": "file:.."
   }
 }
