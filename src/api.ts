@@ -5,6 +5,8 @@ export async function takeScreenshot(url: string, options: WindowOptions): Promi
     const win = new BrowserWindow({
         width: options.width || 1280,
         height: options.height || 720,
+        x: options.x,
+        y: options.y,
         show: false,
         webPreferences: {
             javascript: !options.noJS,
