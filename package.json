@@ -2,7 +2,7 @@
   "name": "browser-test",
   "description": "A frameless CLI browser made for screenshots",
   "version": "1.0.0-a.1",
-  "main": "dist/main.js",
+  "main": "dist/api.js",
   "type": "module",
   "bin": {
     "scb": "./dist/main.js"
@@ -20,7 +20,8 @@
   "files": [
     "dist",
     "assets",
-    "README.md"
+    "README.md",
+    "dist/api.js"
   ],
   "license": "Apache-2.0",
   "engines": {
