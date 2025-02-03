@@ -1,7 +1,7 @@
 {
   "name": "scb",
   "description": "A frameless CLI browser made for screenshots",
-  "version": "1.0.0-a.1",
+  "version": "1.0.0",
   "main": "dist/api.js",
   "bin": {
     "scb": "./dist/main.js"
