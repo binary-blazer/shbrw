@@ -1,13 +1,13 @@
 {
-  "name": "shbrw-example",
-  "version": "1.0.0",
-  "description": "Example project demonstrating the usage of the shbrw package",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "shbrw": "file:.."
-  }
+    "name": "shbrw-example",
+    "version": "1.0.0",
+    "description": "Example project demonstrating the usage of the shbrw package",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "shbrw": "file:.."
+    }
 }

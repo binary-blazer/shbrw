@@ -1,14 +1,11 @@
-import { app } from 'electron';
-import { startWindow } from './startWindow.js';
-import { parseCLIArgs } from './parseCLIArgs.js';
-import { APP_NAME } from './constants.js';
+#!/usr/bin/env node
+"use strict";
+import { execFileSync } from "node:child_process";
+import path from "node:path";
+import process from "node:process";
+import formatPath from "./formatPath.js";
 
-app.whenReady().then(async () => {
-    try {
-        const options = parseCLIArgs();
-        await startWindow(options.url, options);
-    } catch (error) {
-        console.error(`(${APP_NAME}) Error:\n${error}`);
-        app.quit();
-    }
-});
+const scriptPath = formatPath(path.resolve(__dirname, "startElectron.js"));
+const args = [scriptPath, ...Array.from(process.argv).slice(2)];
+console.log("args", args);
+execFileSync(String(require("electron")), args, { stdio: "inherit" });

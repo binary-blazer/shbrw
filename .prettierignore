@@ -1,2 +1,8 @@
-*
-!src/
+.github/
+assets/
+dist/
+images/
+node_modules
+.*
+*.log
+*.md

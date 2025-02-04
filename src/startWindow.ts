@@ -1,11 +1,16 @@
-import { BrowserWindow, app, nativeImage } from "electron";
+import { BrowserWindow, nativeImage, app } from "electron";
 import { createContextMenu } from "./createContextMenu.js";
 import { APP_NAME, WINDOW_ICON, WINDOW_TITLE } from "./constants.js";
 
-export async function startWindow(url: string, options: { width?: number; height?: number; noJS?: boolean }): Promise<void> {
+export async function startWindow(
+    url: string,
+    options: { width?: number; height?: number; noJS?: boolean },
+): Promise<void> {
     let icon = nativeImage.createFromPath(WINDOW_ICON);
     if (icon.isEmpty()) {
-        console.error(`(${APP_NAME}) Failed to load image from path '${WINDOW_ICON}'`);
+        console.error(
+            `(${APP_NAME}) Failed to load image from path '${WINDOW_ICON}'`,
+        );
         icon = nativeImage.createEmpty();
     }
 
@@ -20,7 +25,7 @@ export async function startWindow(url: string, options: { width?: number; height
             javascript: !options.noJS,
             contextIsolation: true,
             nodeIntegration: false,
-        }
+        },
     });
 
     await win.loadURL(url);
@@ -29,13 +34,13 @@ export async function startWindow(url: string, options: { width?: number; height
     if (icon) {
         win.setIcon(nativeImage.createFromPath(WINDOW_ICON));
     }
-    
-    win.webContents.on('context-menu', async (e, params) => {
+
+    win.webContents.on("context-menu", async (e, params) => {
         const menu = await createContextMenu(win);
         menu.popup();
     });
-    
-    win.on('closed', () => {
+
+    win.on("closed", () => {
         app.quit();
     });
 }
