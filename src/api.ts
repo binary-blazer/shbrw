@@ -1,7 +1,10 @@
-import { WindowOptions } from './types/index.js';
-import { BrowserWindow } from 'electron';
+import { WindowOptions } from "./types/index.js";
+import { BrowserWindow } from "electron";
 
-export async function takeScreenshot(url: string, options: WindowOptions): Promise<Buffer> {
+export async function takeScreenshot(
+    url: string,
+    options: WindowOptions,
+): Promise<Buffer> {
     const win = new BrowserWindow({
         width: options.width || 1280,
         height: options.height || 720,
@@ -12,7 +15,7 @@ export async function takeScreenshot(url: string, options: WindowOptions): Promi
             javascript: !options.noJS,
             contextIsolation: true,
             nodeIntegration: false,
-        }
+        },
     });
 
     await win.loadURL(url);

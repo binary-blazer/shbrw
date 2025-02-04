@@ -1,19 +1,19 @@
-import { takeScreenshot } from 'shbrw';
+import { takeScreenshot } from "shbrw";
 
-const url = 'https://example.com';
+const url = "https://example.com";
 const options = {
     width: 1920,
     height: 1080,
     x: 0,
     y: 0,
-    noJS: false
+    noJS: false,
 };
 
 takeScreenshot(url, options)
-    .then(buffer => {
+    .then((buffer) => {
         // Do something with the screenshot buffer
-        console.log('Screenshot taken successfully');
+        console.log("Screenshot taken successfully");
     })
-    .catch(error => {
-        console.error('Error taking screenshot:', error);
+    .catch((error) => {
+        console.error("Error taking screenshot:", error);
     });
