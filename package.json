@@ -1,6 +1,6 @@
 {
     "name": "shbrw",
-    "description": "A frameless CLI browser made for screenshots",
+    "description": "A headless CLI browser made for taking screenshots",
     "version": "1.0.2",
     "main": "dist/api.js",
     "bin": {
