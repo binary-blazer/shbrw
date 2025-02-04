@@ -7,5 +7,4 @@ import formatPath from "./formatPath.js";
 
 const scriptPath = formatPath(path.resolve(__dirname, "startElectron.js"));
 const args = [scriptPath, ...Array.from(process.argv).slice(2)];
-console.log("args", args);
 execFileSync(String(require("electron")), args, { stdio: "inherit" });
