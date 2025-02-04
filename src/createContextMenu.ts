@@ -12,13 +12,13 @@ export async function createContextMenu(win: BrowserWindow): Promise<Menu> {
             submenu: [
                 {
                     label: "Back",
-                    click: () => win.webContents.goBack(),
-                    enabled: win.webContents.canGoBack(),
+                    click: () => win.webContents.navigationHistory.goBack(),
+                    enabled: win.webContents.navigationHistory.canGoBack(),
                 },
                 {
                     label: "Forward",
-                    click: () => win.webContents.goForward(),
-                    enabled: win.webContents.canGoForward(),
+                    click: () => win.webContents.navigationHistory.goForward(),
+                    enabled: win.webContents.navigationHistory.canGoForward(),
                 },
                 {
                     label: "Reload",
