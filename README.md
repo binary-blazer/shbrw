@@ -21,6 +21,21 @@
 </p>
 </div>
 
+## Usage
+
+Looking for one-time usage? Check the commands below!
+
+```bash
+npx shbrw --url=https://binaryblazer.me
+# or
+pnpm dlx shbrw --url=https://binaryblazer.me
+# or
+bunx shbrw --url=https://binaryblazer.me
+```
+
+> [!TIP]
+> Make sure to replace the **``https://binaryblazer.me``** (the value of the the url flag) with your desired URL.
+
 ## Installation
 
 To install the package, use npm:
